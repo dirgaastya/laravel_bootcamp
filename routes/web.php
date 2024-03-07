@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +22,6 @@ Route::get('/', function () {
 Route::get('/post', [PostController::class,'index']);
 Route::get('/post/create', [PostController::class, 'create']);
 Route::post('/post/create', [PostController::class, 'store']);
+
+
+Route::get('/student', [StudentController::class, 'index']);
